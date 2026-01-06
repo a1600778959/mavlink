@@ -18,16 +18,8 @@
   <include>standard.xml</include>
   <include>test.xml</include>
   <include>ualberta.xml</include>
-  <include>uAvionix.xml</include>
-  <!-- loweheiser.xml range of IDs:
-       messages: 10150 - 10199
-       commands: 10150 - 10199
-  -->
-  <include>loweheiser.xml</include>
-  <!-- storm32.xml range of IDs:
-    messages: 60000 - 60049
-    commands: 60000 - 60049
-  -->
+
+
   <include>storm32.xml</include>
   <!-- AVSSUAS.xml range of IDs:
     messages: 60050 - 60099 

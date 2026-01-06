@@ -2,9 +2,7 @@
 <mavlink>
   <include>common.xml</include>
   <!-- Vendors -->
-  <include>uAvionix.xml</include>
   <include>icarous.xml</include>
-  <include>loweheiser.xml</include>
   <include>cubepilot.xml</include>
   <include>csAirLink.xml</include>
   <dialect>2</dialect>
@@ -1049,6 +1047,7 @@
       <entry value="15" name="ROVER_MODE_GUIDED"/>
       <entry value="16" name="ROVER_MODE_INITIALIZING"/>
     </enum>
+  </enums>  
   <messages>
     <message id="150" name="SENSOR_OFFSETS">
       <deprecated since="2022-02" replaced_by="MAG_CAL_REPORT, Accel Parameters, and Gyro Parameters"/>
@@ -1472,7 +1471,6 @@
       <field type="uint8_t" name="status" enum="GOPRO_REQUEST_STATUS">Status.</field>
     </message>
     <!-- 219 to 224 RESERVED for more GOPRO-->
-    <!-- 225 EFI_STATUS moved to common.xml -->
     <message id="226" name="RPM">
       <description>RPM sensor output.</description>
       <field type="float" name="rpm1">RPM Sensor1.</field>
