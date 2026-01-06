@@ -1215,35 +1215,6 @@
       <field type="uint8_t" name="extra_param">Extra parameters enumeration (0 means ignore).</field>
       <field type="float" name="extra_value">Correspondent value to given extra_param.</field>
     </message>
-    <!-- Camera Mount Messages -->
-    <message id="156" name="MOUNT_CONFIGURE">
-      <description>Message to configure a camera mount, directional antenna, etc.</description>
-      <field type="uint8_t" name="target_system">System ID.</field>
-      <field type="uint8_t" name="target_component">Component ID.</field>
-      <field type="uint8_t" name="mount_mode" enum="MAV_MOUNT_MODE">Mount operating mode.</field>
-      <field type="uint8_t" name="stab_roll">(1 = yes, 0 = no).</field>
-      <field type="uint8_t" name="stab_pitch">(1 = yes, 0 = no).</field>
-      <field type="uint8_t" name="stab_yaw">(1 = yes, 0 = no).</field>
-    </message>
-    <message id="157" name="MOUNT_CONTROL">
-      <description>Message to control a camera mount, directional antenna, etc.</description>
-      <field type="uint8_t" name="target_system">System ID.</field>
-      <field type="uint8_t" name="target_component">Component ID.</field>
-      <field type="int32_t" name="input_a">Pitch (centi-degrees) or lat (degE7), depending on mount mode.</field>
-      <field type="int32_t" name="input_b">Roll (centi-degrees) or lon (degE7) depending on mount mode.</field>
-      <field type="int32_t" name="input_c">Yaw (centi-degrees) or alt (cm) depending on mount mode.</field>
-      <field type="uint8_t" name="save_position">If "1" it will save current trimmed position on EEPROM (just valid for NEUTRAL and LANDING).</field>
-    </message>
-    <message id="158" name="MOUNT_STATUS">
-      <description>Message with some status from autopilot to GCS about camera or antenna mount.</description>
-      <field type="uint8_t" name="target_system">System ID.</field>
-      <field type="uint8_t" name="target_component">Component ID.</field>
-      <field type="int32_t" name="pointing_a" units="cdeg">Pitch.</field>
-      <field type="int32_t" name="pointing_b" units="cdeg">Roll.</field>
-      <field type="int32_t" name="pointing_c" units="cdeg">Yaw.</field>
-      <extensions/>
-      <field type="uint8_t" name="mount_mode" enum="MAV_MOUNT_MODE">Mount operating mode.</field>
-    </message>
     <!-- geo-fence messages -->
     <message id="160" name="FENCE_POINT">
       <description>A fence point. Used to set a point when from GCS -&gt; MAV. Also used to return a point from MAV -&gt; GCS.</description>
