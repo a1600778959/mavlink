@@ -1666,23 +1666,6 @@
       <field type="uint8_t" name="data_length">Data length.</field>
       <field type="uint8_t[220]" name="data">Reply data.</field>
     </message>
-    <!-- realtime Adaptive Controller tuning message -->
-    <message id="11010" name="ADAP_TUNING">
-      <description>Adaptive Controller tuning information.</description>
-      <field type="uint8_t" name="axis" enum="PID_TUNING_AXIS" instance="true">Axis.</field>
-      <field type="float" name="desired" units="deg/s">Desired rate.</field>
-      <field type="float" name="achieved" units="deg/s">Achieved rate.</field>
-      <field type="float" name="error">Error between model and vehicle.</field>
-      <field type="float" name="theta">Theta estimated state predictor.</field>
-      <field type="float" name="omega">Omega estimated state predictor.</field>
-      <field type="float" name="sigma">Sigma estimated state predictor.</field>
-      <field type="float" name="theta_dot">Theta derivative.</field>
-      <field type="float" name="omega_dot">Omega derivative.</field>
-      <field type="float" name="sigma_dot">Sigma derivative.</field>
-      <field type="float" name="f">Projection operator value.</field>
-      <field type="float" name="f_dot">Projection operator derivative.</field>
-      <field type="float" name="u">u adaptive controlled output command.</field>
-    </message>
     <!-- camera vision based attitude and position delta message -->
     <!-- Angle of Attack and Side Slip Angle message -->
     <message id="11020" name="AOA_SSA">
