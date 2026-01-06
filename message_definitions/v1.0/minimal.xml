@@ -152,9 +152,6 @@
       <entry value="26" name="MAV_TYPE_GIMBAL">
         <description>Gimbal</description>
       </entry>
-      <entry value="27" name="MAV_TYPE_ADSB">
-        <description>ADSB system</description>
-      </entry>
       <entry value="28" name="MAV_TYPE_PARAFOIL">
         <description>Steerable, nonrigid airfoil</description>
       </entry>
@@ -585,12 +582,6 @@
       </entry>
       <entry value="155" name="MAV_COMP_ID_LOG">
         <description>Logging component.</description>
-      </entry>
-      <entry value="156" name="MAV_COMP_ID_ADSB">
-        <description>Automatic Dependent Surveillance-Broadcast (ADS-B) component.</description>
-      </entry>
-      <entry value="157" name="MAV_COMP_ID_OSD">
-        <description>On Screen Display (OSD) devices for video links.</description>
       </entry>
       <entry value="158" name="MAV_COMP_ID_PERIPHERAL">
         <description>Generic autopilot peripheral component ID. Meant for devices that do not implement the parameter microservice.</description>
