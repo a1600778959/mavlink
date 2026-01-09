@@ -1201,12 +1201,6 @@
       <field type="uint8_t" name="len" units="bytes">Data length.</field>
       <field type="uint8_t[64]" name="data">Raw data.</field>
     </message>
-    <message id="172" name="DATA96">
-      <description>Data packet, size 96.</description>
-      <field type="uint8_t" name="type">Data type.</field>
-      <field type="uint8_t" name="len" units="bytes">Data length.</field>
-      <field type="uint8_t[96]" name="data">Raw data.</field>
-    </message>
     <message id="173" name="RANGEFINDER">
       <description>Rangefinder reporting.</description>
       <field type="float" name="distance" units="m">Distance.</field>
