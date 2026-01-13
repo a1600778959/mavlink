@@ -1040,7 +1040,7 @@
       <entry value="4" name="ROVER_MODE_HOLD"/>
       <entry value="5" name="ROVER_MODE_LOITER"/>
       <entry value="6" name="ROVER_MODE_FOLLOW"/>
-      <entry value="7" name="ROVER_MODE_SIMPLE"/>
+      <entry value="17" name="ROVER_MODE_AOAFOLLOW"/>
       <entry value="10" name="ROVER_MODE_AUTO"/>
       <entry value="11" name="ROVER_MODE_RTL"/>
       <entry value="12" name="ROVER_MODE_SMART_RTL"/>
